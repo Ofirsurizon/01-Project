@@ -1,8 +1,10 @@
+html, body {
+    height: 100%;
+}
 
 body {
     background-image: url(https://cdn.pixabay.com/photo/2014/04/16/17/08/bulletin-board-325721_1280.jpg);
     background-size:  cover;  
-    background-position: center top; 
     background-repeat: no-repeat;
 }
 .header {
@@ -22,11 +24,6 @@ body {
     background-size: cover;
     padding: 20px;
 }
-/* .note-img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-} */
 
 .note-text {
     padding: 20px;
@@ -36,4 +33,8 @@ body {
 #taskList {
     display: flex;
     flex-wrap: wrap;
+}
+
+li {
+    list-style-type: none;
 }
