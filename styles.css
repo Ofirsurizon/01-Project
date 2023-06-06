@@ -18,7 +18,7 @@ body {
 }
 
 .note {
-    background-image: url('/assets/images/note.jpg');
+    background-image:url(assets/images/note.jpg);
     background-size: cover;
     padding: 20px;
 }
