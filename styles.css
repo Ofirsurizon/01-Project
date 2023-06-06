@@ -6,6 +6,7 @@ body {
     background-image: url(https://cdn.pixabay.com/photo/2014/04/16/17/08/bulletin-board-325721_1280.jpg);
     background-size:  cover;  
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .header {
     color: black;
