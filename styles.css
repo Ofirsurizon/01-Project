@@ -12,11 +12,17 @@ body {
 }
 
 .background {
-    background-image:url(assets/images/paper.jpg);
+    
    background-position: center ;
    background-size: 100% auto;
     background-repeat: no-repeat;
     
+}
+
+.form-group {
+    background-image:url(https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000);
+    background-position: center ;
+   background-size: 100% auto;
 }
 
 .note {
