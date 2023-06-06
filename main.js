@@ -31,6 +31,9 @@ function addTask() {
 
     // display the note
     displayNotes();
+
+    //reset fields in the form
+    document.getElementById("taskForm").reset();
 }
 
 function displayNotes() {
