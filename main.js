@@ -17,7 +17,7 @@ function addTask() {
 
 
     const item = {
-        Image: '/assets/images/note.png',
+        Image: '/assets/images/note.jpg',
         Task: taskNameBox.value,
         Time: taskTimeBox.value,
         Date: taskDateBox.value
