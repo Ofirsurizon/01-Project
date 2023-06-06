@@ -20,13 +20,18 @@ function addTask() {
 
     let html = "";
     for (const item of images) {
+
+        
         html += `
         <li>
             <div class="note">
                 <img src="${item.Image}" alt="Task image">
                 <div class="note-text">
-                    Task: ${item.Task}, <br> Time: ${item.Time}, <br> Date: ${item.Date}
-                </div>
+                    Task: ${item.Task}, <br> Time: ${item.Time}, <br> Date: ${item.Date} <br>
+                    <button class="btn btn-danger delete-button">X</button>
+                    </div>
+                    
+                    
             </div>
         </li>
     `;
