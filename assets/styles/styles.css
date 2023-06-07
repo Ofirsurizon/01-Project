@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Urbanist:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.header {
+  font-family: "Anton", sans-serif, "Urbanist", sans-serif;
+}
+
+.font-change {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.header {
+  color: black;
+}
+
+.background {
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.form-group {
+  background-image: url(https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000);
+  background-position: center;
+  background-size: 100% auto;
+}
+
+.note {
+  position: relative;
+  background-image: url("../images/note.jpg");
+  background-size: cover;
+  padding: 27px 16px;
+  margin: 15px;
+  width: 183px;
+  height: 247px;
+}
+
+.btn-note-submit {
+  position: absolute;
+  top: 0;
+  right: -5px;
+
+}
+
+.note > .note-field-container {
+  text-align: start;
+  margin-bottom: 2px;
+  width: 100%;
+}
+
+.note .note-field-container .value {
+  word-break: break-word;
+  max-height: 73px;
+  overflow-y: auto; 
+}
+
+.note-text {
+  padding: 20px;
+}
+
+#taskList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
+}
