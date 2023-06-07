@@ -12,27 +12,30 @@ function renderNotes() {
     htmlStr += `
         <li>
             <div class="note text-center">
+                
                 <div class="note-field-container">
-                    <div class="label">
-                        Task
-                    </div> 
-
-                    <div class="value">
-                        ${images[i].Task}
-                    </div>
+                    <div class="label headline-font">Task:</div> 
+                    <div class="value">${images[i].Task}</div>
                 </div>
 
                 <div class="note-field-container">
-                    <div class="label">Time</div>
-                    <div class="value">${images[i].Time}</div>
+                     <div class="label headline-font">Time:</div>
+                     <div class="value">${images[i].Time}</div>
                 </div>
 
                 <div class="note-field-container">
-                    <div class="label">Date:<div>
-                    <div class="value">${images[i].Date}</div>
+                     <div class="label headline-font">Date:<div>
+                     <div class="value">${images[i].Date}</div>
                 </div>
 
-                <button id="${i}" class="btn-note-submit btn btn-danger delete-button mx-auto d-block mb-2" onclick="deleteNote(this)">X</button>
+                <button
+                    id="${i}" 
+                    class="btn btn-danger btn-sm  top-2  btn-note-submit"
+                    onclick="deleteNote(this)">X
+                </button>
+
+
+
             </div>
         </li>
     `.trim();
