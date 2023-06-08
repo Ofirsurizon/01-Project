@@ -2,12 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
 
+input[type="date"] {
+  font-size: x-large;
+}
+/* 
+.date {
+  font-size: xx-large; // replace 'medium' with your preferred font size
+} */
+
+.note .note-field-container:nth-child(3) .value {
+  font-size: medium;
+  text-decoration: none;
+}
+
 .headline-font {
   font-family: "Nanum Pen Script", cursive;
+  font-size: larger;
+  border-bottom: 2px;
   text-decoration: underline;
 }
 
+
+
 .header {
+  color: black;
   font-family: "Anton", sans-serif, "Urbanist", sans-serif;
 }
 
@@ -17,6 +35,9 @@
 
 .value {
   font-family: "Bebas Neue", sans-serif;
+  word-break: break-word;
+  max-height: 73px;
+  overflow-y: auto;
 }
 
 html,
@@ -29,10 +50,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.header {
-  color: black;
 }
 
 .background {
@@ -97,4 +114,21 @@ li {
   flex-wrap: wrap;
   justify-content: start;
   gap: 20px;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

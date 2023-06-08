@@ -24,7 +24,9 @@ function renderNotes() {
                 </div>
 
                 <div class="note-field-container">
-                     <div class="label headline-font">Date:<div>
+
+                     <div class="label headline-font">Date:</div>
+
                      <div class="value">${images[i].Date}</div>
                 </div>
 
