@@ -47,6 +47,12 @@ function renderNotes() {
 
   elTaskList.innerHTML = htmlStr;
 }
+function scrollToLastTask() {
+  const lastTask = elTaskList.lastElementChild.lastElementChild;
+  if (lastTask) {
+    lastTask.scrollIntoView({ behavior: "smooth" });
+  }
+}
 
 function loadFromLocalStorage() {
   const json = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -84,6 +90,10 @@ function addTask(event) {
 
   //reset fields in the form
   document.getElementById("taskForm").reset();
+  
+  elTaskNameBox.focus();
+
+  scrollToLastTask();
 }
 
 function deleteNote(element) {
